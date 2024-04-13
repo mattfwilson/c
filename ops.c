@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    float x = 8;
-    float y = 2;
-    float z = 3;
+    int x = 8;
+    int y = 2;
+    int z = 3;
     float mod_x_y = (x + z) / y;
 
-    printf("x + y / z = %f\n", mod_x_y);
+    printf("%d + %d / %d = %f\n", x, z, y, mod_x_y);
     
     if (x > y) {
         printf("%f is greater than y.", x);

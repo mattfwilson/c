@@ -9,7 +9,7 @@ int main() {
   scanf("%lf", &weight);
 
   printf("Which planet are you visiting? \n");
-  printf("\t1. Mercury\t2. Venus\t3. Mars\t4. Jupiter\t5. Saturn\t6. Uranus\t7. Neptune\n\n");
+  printf("1. Mercury\n2. Venus\n3. Mars\n4. Jupiter\n5. Saturn\n6. Uranus\n7. Neptune\n\n");
   scanf("%d", &planet);
 
   if (planet == 1) {
