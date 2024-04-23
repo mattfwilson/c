@@ -21,11 +21,11 @@ int main() {
   } else if (planet == 4) {
     weight = weight * 2.34;
   } else if (planet == 5) {
-    weight  = weight * 1.06;
+    weight = weight * 1.06;
   } else if (planet == 6) {
     weight = weight * .92;
   } else if (planet == 7) {
-    weight = weight *1.19;
+    weight = weight * 1.19;
   }
  
   float rounded_weight = round(weight * 100) / 100;
