@@ -2,22 +2,22 @@
 #include <time.h>
 
 int main() {
-  clock_t start, end;
+  clock_t start_time, end_time;
   double cpu_time_used;
 
-  start  = clock();
+  start_time = clock();
 
   int i = 0;
   
-  while (i < 1000000) {
+  while (i < 100000000) {
     i++;
-    printf("%d\n", i);
   }
   
-  end = clock();
+  end_time = clock();
 
-  cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-  printf("Time: %f seconds\n", cpu_time_used);
+  cpu_time_used = ((double) (end_time - start_time)) / CLOCKS_PER_SEC * 10;
+  printf("Time taken in C: %f seconds.\n", cpu_time_used);
+  printf("CLOCKS_PER_SEC: %f", CLOCKS_PER_SEC);
 
   return 0;
 }
