@@ -3,8 +3,8 @@
 int main() {
   float float_arr[5] = {0.0};
   float float_arr2[5];
-  int int_arr[] = {10, {1, 2, 3}, 30, NULL, 50, 60, true, 80, 90.0, 100};
-  int int_size = sizeof(int_arr) / sizeof(int);
+  float int_arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+  int int_size = sizeof(int_arr) / sizeof(int_arr[0]);
  
   for (int i = 0; i < 5; i++) {
     printf("%f", float_arr[i]);
@@ -16,7 +16,7 @@ int main() {
   }
   printf("\n");
 
-  printf("[Size of array: %d]\n", int_size);
+  printf("[Size of array: %i]\n", int_size);
   for (int i = 0; i < int_size; i++) {
     printf("%d ", int_arr[i]);
   }
