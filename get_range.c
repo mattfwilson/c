@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int * get_range(int array[], int start, int end) {
+int* get_range(int array[], int start, int end) {
   int size = end - start + 1;
   printf("get_range() size: %i\n", size);
-  int * subarray = (int *) malloc(size * sizeof(int));
+  int* subarray = (int*) malloc(size * sizeof(int));
 
   if (subarray == NULL) {
     printf("Memory allocation failed\n");
@@ -25,6 +25,8 @@ int main() {
   int end = size - 1;
   int* subarray = get_range(arr, start, end);
   
+  printf("subarray: %i", subarray);
+
   for (int i = 0; i <= end - start; i++) {
     printf("%i, ", subarray[i]);
   }
