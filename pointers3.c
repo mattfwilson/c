@@ -2,6 +2,8 @@
 
 int main() {
   int x = 5;
+  int *pX = &x; 
+  int *y = x;
 
   int doubleValue(int x) {
     return x * 2;
@@ -17,7 +19,16 @@ int main() {
   }
   
   tripleValue(&x);
-  printf("%d\n", x);
+  
+  void greet() {
+    printf("Hello\n");
+  }
+
+  greet();
+
+  printf("x: %d\n", x);
+  printf("x pointer: %p\n", &x);
+  printf("y pointer: %p\n", *y);
 
   return 0;
 }
