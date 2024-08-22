@@ -1,17 +1,18 @@
 #include <stdio.h>
 
-void printAgeValue(int age) {
+void printViaValue(int age) {
   printf("Your are %d years old according to age var.\n", age);
 }
 
-void printWithPointer(int *age) {
-  printf("Your are %d years old according to pAge pointing to age var.\n", *age);
+void printViaPointer(int *age) {
+  printf("Your are %d years old according to pAge pointing to age var.\n\n", *age);
 }
 
 int main() {
   int age = 21;
   int *pAge = NULL;
   pAge = &age;
+  int arr[] = {*pAge, 100};
     
   printf("address of age: %p\n", &age);
   printf("address in pAge: %p\n\n", pAge);
@@ -20,10 +21,14 @@ int main() {
   printf("size of pAge: %d bytes\n\n", sizeof(pAge));
 
   printf("value of age: %d\n", age);
-  printf("value of pAge: %d\n\n", *pAge); // value at address "dereferencing"
+  printf("value of pAge: %d\n\n", *pAge); // dereferenced - outputs value at address
   
-  printAgeValue(age);
-  printWithPointer(pAge);
+  printViaValue(age);
+  printViaPointer(pAge);
+
+  for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
+    printf("%d, ", arr[i]);
+  }
 
   return 0;
 }
