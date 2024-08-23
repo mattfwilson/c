@@ -21,11 +21,12 @@ int main() {
   int plebs[] = {7, 3, 0, 12, 4};
   int noobs[] = {6, 10, 22, 7, 9};
   int size = sizeof(plebs) / sizeof(plebs[0]);
-  int input;
-  int match;
+  int input, match;
+  int *pPlebs = &plebs[3];
 
   pass_in(plebs, noobs, size);
-
+  
+  printf("%d\n", *pPlebs);
   printf("What index do you want to match? ");
   scanf("%d", &input);
   match = matchIndex(noobs, input);
