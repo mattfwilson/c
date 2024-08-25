@@ -23,12 +23,13 @@ int main() {
   int arr[] = {3, 27, 9, 16, 22};
   char arr2[] = {"Hello"};
   double arr3[] = {3.14, 1.23, 0.001, 88.91};
-  int size = sizeof(arr) / sizeof(int);
+  int int_size = sizeof(arr) / sizeof(int);
+  int char_size = sizeof(arr2) / sizeof(char);
   int dbl_size = sizeof(arr3) / sizeof(double);
 
-  show_int_arr(arr, size);
+  show_int_arr(arr, int_size);
   printf("\n");
-  show_char_arr(arr2, size);
+  show_char_arr(arr2, char_size);
   printf("\n");
   show_double_arr(arr3, dbl_size);
 
