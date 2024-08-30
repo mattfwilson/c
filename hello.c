@@ -3,6 +3,6 @@
 char welcome[6] = "Hello";
 
 int main() {
-    printf(welcome);
+    printf("%s world!", welcome);
     return 0;
 }

@@ -19,17 +19,14 @@ int main() {
 
   a += 5;
   printf("a += 5\n\n");
-
   show_values();
-  
+
   aPtr += 4;
   printf("aPtr += 4\n\n");
-
   show_values();
 
   *aPtr += 2;
   printf("*aPtr += 2\n\n");
-
   show_values();
 
   printf("%s\n", str);
