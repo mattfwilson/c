@@ -34,6 +34,7 @@ int main() {
     *pStr = '%';
     pStr++;
   }
+
   printf("%s\n", str);
 
   return 0;
