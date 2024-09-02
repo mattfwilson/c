@@ -31,7 +31,9 @@ int main() {
 
   printf("%s\n", str);
   for (int i = 0; i < strlen(str); i++) {
-    *pStr = '%';
+    if (*pStr == "o") {
+      *pStr = '%';
+    }
     pStr++;
   }
 
