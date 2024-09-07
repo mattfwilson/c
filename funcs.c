@@ -8,9 +8,11 @@ int main() {
   long num = atol(to_int);
   int randNum = rand();
   int *ptr = (int *)malloc(sizeof(int));
+  int randomNumber = rand() % 1000 + 1;
 
   printf("%s equates to %i as an integer\n", to_int, num);
   printf("%i\n", randNum);
-  printf("%p", *ptr);
+  printf("%p\n", *ptr);
+  printf("Random number: %i", randomNumber);
   return 0;
 }
