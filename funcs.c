@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <tgmath.h>
+#include <time.h>
 
 float addNums(float num1, float num2) {
   return num1 + num2;
@@ -26,7 +27,15 @@ int main() {
   printf("pointer of malloc int: %p\n", *ptr);
   
   float addedFloats = addNums(4, 7);
-  printf("two floats added: %f", addedFloats);
+  printf("two floats added: %f\n", addedFloats);
+
+  clock_t start, end;
+  double cpu_time_passed;
+  start = clock();
+  for (long i = 0; i < 1000000000; i++);
+  end = clock();
+  cpu_time_passed = ((double) (end - start)) / CLOCKS_PER_SEC;
+  printf("Time taken to count to one billion: %f seconds\n", cpu_time_passed);
 
   return 0;
 }
