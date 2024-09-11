@@ -37,5 +37,9 @@ int main() {
   cpu_time_passed = ((double) (end - start)) / CLOCKS_PER_SEC;
   printf("Time taken to count to one billion: %f seconds\n", cpu_time_passed);
 
+  double tan_res = tan(70.0);
+  tan_res = ceil(tan_res * 100) / 100.0;
+  printf("double tan: %d\n", tan_res);
+
   return 0;
 }
