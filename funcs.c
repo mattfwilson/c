@@ -26,7 +26,11 @@ int main() {
   int *ptr = (int *)malloc(sizeof(int));
   printf("pointer of malloc int: %p\n", *ptr);
   
-  float addedFloats = addNums(4, 7);
+  int num1 = 10;
+  int num2 = 20;
+
+  float addedFloats = addNums(num1, num2);
+  printf("num1: %d num2: %d\n", num1, num2);
   printf("two floats added: %f\n", addedFloats);
 
   clock_t start, end;
