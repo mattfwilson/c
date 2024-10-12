@@ -31,10 +31,10 @@ int main() {
 
   printf("%s\n", str);
   for (int i = 0; i < strlen(str); i++) {
-    if (*pStr == "o") {
+    if (*pStr == 0) {
       *pStr = '%';
     }
-    pStr++;
+    pStr+= 1;
   }
 
   printf("%s\n", str);
