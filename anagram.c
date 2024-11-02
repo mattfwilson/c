@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// starting not to care
+
 int main() {
   int counter1[] = {0, 0, 0, 0};
   int counter2[] = {0, 0, 0, 0};
@@ -62,7 +64,7 @@ int main() {
     printf("Anagram!");
   }
   else {
-    printf("What is going on...");
+    printf("Unknown error");
   }
 
 
