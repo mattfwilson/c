@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// starting not to care
 
 int main() {
   int counter1[] = {0, 0, 0, 0};
