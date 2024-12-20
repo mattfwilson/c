@@ -4,11 +4,11 @@
 
 bool is_leap_year(int year) {
   if (year > 2000) {
-    printf("is greater than 2000");
+    printf("%d is greater than 2000", year);
     return true;
   }
   else {
-    printf("is less than 2000");
+    printf("%i is less than 2000", year);
     return false;
   }
 }
