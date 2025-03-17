@@ -12,7 +12,8 @@ int main() {
     printf("a: %i\n", a);
     printf("aPtr: %p\n", aPtr);
     printf("&a: %p\n", &a);
-    printf("*aPtr: %i\n\n", *aPtr);
+    printf("*aPtr: %i\n", *aPtr);
+    printf("*pStr: %i\n\n", *pStr);
   }
 
   show_values();
