@@ -22,6 +22,7 @@ int main() {
 
 
   int days_in_month[13] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12};
+
   days_in_month[0] = 31;
   days_in_month[1] = 31;
   days_in_month[2] = 28;
@@ -37,7 +38,7 @@ int main() {
   days_in_month[12] = 31;
 
   for (int i = 0; i < 13; i++) {
-    printf("%d\n", days_in_month[i]);
+    printf("%i\n", days_in_month[i]);
   }
   return 0;
 }
