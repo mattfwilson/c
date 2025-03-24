@@ -2,6 +2,9 @@
 #include <stdbool.h>
 
 
+int days_in_month[] = {[0]=0, [1]=31, [2]=28, [3]=31, [4]=30, [5]=31, [6]=30, [7]=31, [8]=31, [9]=30, [10]=31, [11]=30, [12]=31};
+
+
 bool is_leap_year(int year) {
   if (year > 2000) {
     printf("%d is greater than 2000\n", year);
@@ -19,23 +22,6 @@ int main() {
   int year2 = 1999;
 
   is_leap_year(year1);
-
-
-  int days_in_month[13] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12};
-
-  days_in_month[0] = 31;
-  days_in_month[1] = 31;
-  days_in_month[2] = 28;
-  days_in_month[3] = 31;
-  days_in_month[4] = 30;
-  days_in_month[5] = 31;
-  days_in_month[6] = 30;
-  days_in_month[7] = 31;
-  days_in_month[8] = 31;
-  days_in_month[9] = 30;
-  days_in_month[10] = 31;
-  days_in_month[11] = 31;
-  days_in_month[12] = 31;
 
   for (int i = 0; i < 13; i++) {
     printf("%i\n", days_in_month[i]);
