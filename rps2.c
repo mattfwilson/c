@@ -18,7 +18,7 @@ void play(const char *arr[], int size) {
 int main() {
   const char *choices[] = {"Rock", "Paper", "Scissors", "Shotgun"};
   int size = sizeof(choices) / sizeof(choices[0]);
-  char choice[64];
+  char choice[40];
 
   printf("Enter choice: ");
   scanf("%s", &choice);
@@ -33,7 +33,7 @@ int main() {
       }
   }
 
-  if (found) {
+  if (found == 1) {
     printf("%s is not valid.", choice);
   }
     else {
