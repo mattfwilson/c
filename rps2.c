@@ -21,7 +21,7 @@ int main() {
   char choice[40];
 
   printf("Enter choice: ");
-  scanf("%s", &choice);
+  scanf("%s", choice);
 
   int found;
   found = 0;
@@ -36,7 +36,7 @@ int main() {
   if (found == 1) {
     printf("%s is not valid.", choice);
   }
-    else {
+  else {
     printf("You chose %s!\n", choice);
     play(choices, size);
   }
