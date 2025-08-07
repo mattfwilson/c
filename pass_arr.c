@@ -11,16 +11,14 @@ void printArr(int array[], int size) {
 int main() {
   int coffeePerWeek[] = {2, 1, 2, 2, 3, 0};
   int arr_size = sizeof(coffeePerWeek) / sizeof(int);
-
+  
+  printf("Original output:\n");
   for (int i = 0; i < arr_size; i++) {
     printf("%d ", coffeePerWeek[i]);
   }
 
-  printf("\n\n");
-
-  printf("After printArr:\n");
+  printf("\n\nAfter printArr:\n");
   printArr(coffeePerWeek, arr_size);
-  printf("\n");
   
   for (int i = 0; i < arr_size; i++) {
     printf("%d ", coffeePerWeek[i]);
