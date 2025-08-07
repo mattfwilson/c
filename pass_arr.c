@@ -19,7 +19,7 @@ int main() {
 
   printf("\n");
   printArr(coffeePerWeek, arr_size); // arrays passed into funcions decay to a pointer; and pointers do not hold a size
-  printf("\n");
+  printf("\n\n");
   
   for (int i = 0; i < arr_size; i++) {
     printf("%d ", coffeePerWeek[i]);
@@ -27,7 +27,7 @@ int main() {
 
   printf("\n");
   printArr(coffeePerWeek, arr_size);
-  printf("\n");
+  printf("\n\n");
 
   return 0;
 }
