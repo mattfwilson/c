@@ -24,21 +24,5 @@ int main() {
   printf("attack:   %d\n", c1.attack);
   printf("block:    %d\n\n", c1.block);
 
-  printf("Card 2    ----------------\n");
-  struct Card c2 = {"Defend", 1, "Block", 0, 5};
-  printf("energy:   %d\n", c2.energy);
-
-  struct Card* c2Pointer = &c2;
-  (*c2Pointer).energy = 10;
-
-  printf("name:     %s\n", c2.name);
-  printf("type:     %s\n", c2.type);
-  printf("energy:   %d\n", c2.energy);
-  printf("attack:   %d\n", c2.attack);
-  printf("block:    %d\n", c2.block);
-
-  c2Pointer -> energy = 3;
-  printf("energy:   %d\n", c2.energy);
-
   return 0;
 }
