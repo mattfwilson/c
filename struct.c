@@ -17,7 +17,6 @@ int main() {
   c1.attack = 6;
   c1.block = 0;
 
-  printf("Card 1    ----------------\n");
   printf("name:     %s\n", c1.name);
   printf("type:     %s\n", c1.type);
   printf("energy:   %d\n", c1.energy);
