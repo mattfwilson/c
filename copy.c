@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <string.h>
  
-void copy(char* dst, char* src) {
-  while (*src != '\0') {
-    *dst = *src;
-    src++;
-    printf("%s\n", src);
-    dst++;
-    printf("%s\n", dst);
+void copy(char* destination, char* original) {
+  while (*original != '\0') {
+    *destination = *original;
+    original++;
+
+    printf("%s\n", original);
+    destination++;
+    printf("%s\n", destination);
   }
-  *dst = '\0';
+  *destination = '\0';
 }
  
 int main(){
-  char srcString[] = "Hello World";
-  char dstString[strlen(srcString) + 1];
+  char originalString[] = "Hello World";
+  char destinationString[strlen(originalString) + 1];
 
-  copy(dstString, srcString);
-  printf("%s\n", srcString);
-  printf("%s", dstString);
+  copy(destinationString, originalString);
+  printf("%s\n", originalString);
+  printf("%s", destinationString);
 }
