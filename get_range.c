@@ -3,11 +3,9 @@
 
 int* get_range(int array[], int start, int end) {
   int size = end - start + 1;
-  printf("get_range() size: %i\n", size);
   int* subarray = (int*) malloc(size * sizeof(int));
 
   if (subarray == NULL) {
-    printf("Memory allocation failed\n");
     exit(1);
   }
 
@@ -30,6 +28,7 @@ int main() {
   for (int i = 0; i <= end - start; i++) {
     printf("%i, ", subarray[i]);
   }
+
   printf("\n");
 
   return 0;
