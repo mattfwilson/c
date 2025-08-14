@@ -3,8 +3,8 @@
 int count = 0;
 
 void incCount(int amount) {
-    count += amount;
-    count++;
+  count += amount;
+  count++;
 }
 
 int main() {
