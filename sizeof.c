@@ -5,6 +5,7 @@ void print_size(int arr[], int len) {
     printf("array len: %d, HUGE", len);
   } else {
     printf("array len: %d, tiny...", len);
+    printf("\narray: %d", arr);
   }
 }
 
