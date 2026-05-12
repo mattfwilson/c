@@ -3,7 +3,6 @@
 #include <time.h>
 #include <unistd.h>
 
-// Structures section
 struct Race {
   int numberOfLaps;
   int currentLap;
@@ -21,11 +20,11 @@ void printIntro();
 void printCountDown();
 void printFirstPlaceAfterLap(struct Race race);
 void printCongratulation(struct Race race);
+
 int calculateTimeToCompleteLap();
 void updateRace(struct Race* race, struct RaceCar* raceCar1, struct RaceCar* raceCar2);
 void startRace(struct RaceCar* raceCar1, struct RaceCar* raceCar2);
 
-// Print functions section
 void printIntro() {
    printf("Welcome to our main event digital race fans!\n");
    printf("I hope everybody has their snacks because we are about to begin!\n\n");
@@ -45,8 +44,6 @@ void printCongratulation(struct Race race) {
     printf("It truly was a great race and everybody have a good night!\n");
 }
 
-
-// Logic functions section
 int calculateTimeToCompleteLap() {
     return rand() % 100 + 1;
 }
@@ -84,7 +81,6 @@ void startRace(struct RaceCar* raceCar1, struct RaceCar* raceCar2) {
     printCongratulation(race);
 }
 
-// int main()
 int main() {
     srand(time(NULL));
 
