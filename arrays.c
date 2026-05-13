@@ -15,12 +15,11 @@ int main() {
     printf("%f ", float_arr2[i]);
   }
   printf("\n");
-
-  printf("[Size of array: %i]\n", int_size);
-  for (int i = 0; i < int_size; i++) {
-    printf("%d ", int_arr[i]);
+  
+  int i = 1;
+  while (i < 26) {
+    printf("%d\n", i);
+    i++;
   }
-  printf("\n");
-
   return 0;
 }
