@@ -15,9 +15,11 @@ void copy(char* destination, char* original) {
  
 int main(){
   char originalString[] = "Hello World";
-  char destinationString[strlen(originalString) + 1];
+  size_t lenOriginal = strlen(originalString); 
+  char destinationString[lenOriginal + 1];
 
   copy(destinationString, originalString);
+  printf("%zu\n", lenOriginal);
   printf("%s\n", originalString);
   printf("%s", destinationString);
 }
