@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
- 
+
+
 void copy(char* destination, char* original) {
   while (*original != '\0') {
     *destination = *original;
@@ -10,7 +11,7 @@ void copy(char* destination, char* original) {
     destination++;
     printf("%s\n", destination);
   }
-  *destination = '\0';
+  //*destination = '\0';
 }
  
 int main(){
