@@ -1,7 +1,8 @@
 #include <stdio.h>
 
+
 int main() {
-  for (int i = 0; i <= 100; i++) {
+  for (int i = 0; i <= 50; i++) {
     if (i % 3 == 0) {
       printf("%d is divisible by 3.\n", i);
     } 
@@ -11,7 +12,7 @@ int main() {
     else if (i % 3 == 0 && i % 5 == 0) {
       printf("%d is divisible by both 3 and 5.\n", i);
     }
-    //printf("%d\n", i);
+    printf("%d\n", i);
   }
   return 0;
 }
