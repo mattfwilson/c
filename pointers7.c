@@ -7,9 +7,11 @@ int main() {
   int* aPtr = &a;
   char str[] = "For the love of god...";
   char* pStr = &str[0];
-  
+  char arr[6] = {5, 4, 3, 2, 1, 0};
+
   void show_values() {
     printf("a: %i\n", a);
+    printf("arr: %d\n", arr[3]);
     printf("aPtr: %p\n", aPtr);
     printf("&a: %p\n", &a);
     printf("*aPtr: %i\n", *aPtr);
