@@ -38,9 +38,8 @@ int main() {
       *pStr = '%';
     }
     pStr+= 1;
+    printf("%s\n", str);
   }
-
-  printf("%s\n", str);
 
   return 0;
 }
