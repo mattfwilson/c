@@ -9,10 +9,7 @@ int main() {
 
     for (i = 0; i < arr_len; i++) {
         printf("%d\n", arr[i]);
-    }
-
-    for (i = 0; i < arr_len; i++) {
-        printf("%d\n", arr[&i]);
+        printf("%p\n", &arr[i]);
     }
 
     return 0;
