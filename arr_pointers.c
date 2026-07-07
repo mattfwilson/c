@@ -3,14 +3,15 @@
 
 
 int main() {
-    int arr[5] = {10, 20, 30, 40, 50};
+    int arr[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
     int arr_len = sizeof(arr) / sizeof(arr[0]);
     int i;
     int j = 2;
 
-    for (i = 0; j < arr_len; i++) {
-        printf("%d\n", arr[i]);
-        printf("%p\n", (void *)&arr[i]);
+    for (i = 1 + j; j < arr_len; j++) {
+        printf("array item: %d\n", arr[i]);
+        printf("array item address: %p\n", (void *)&arr[i]);
+        printf("full array address: %p\n", &arr);
     }
 
     return 0;
