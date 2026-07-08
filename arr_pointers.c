@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
+int myFunc(int input) {
+    return input + 5;
+}
 
 int main() {
     int arr[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
@@ -19,7 +22,13 @@ int main() {
         printf("%d is still less than 5\n", k);
         k++;
     }
+    
+    int test = myFunc(4);
+    printf("test: %d", test);
 
     return 0;
 }
+
+
+
 
