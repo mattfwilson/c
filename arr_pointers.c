@@ -23,7 +23,7 @@ int main() {
         k++;
     }
     
-    int test = myFunc(4);
+    float test = myFunc(4.3);
     printf("test: %d", test);
 
     return 0;
