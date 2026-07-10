@@ -23,8 +23,8 @@ int main() {
         k++;
     }
     
-    float test = myFunc(4.3);
-    printf("test: %d", test);
+    float testFloat = myFunc(4.39304902);
+    printf("test: %d", testFloat);
 
     return 0;
 }
