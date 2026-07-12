@@ -18,7 +18,7 @@ int main() {
         printf("full array address: %p\n", &arr);
     }
     
-    while (k < 5) {
+    while (k+j < 5) {
         printf("%d is still less than 5\n", k);
         k++;
     }
