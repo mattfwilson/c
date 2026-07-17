@@ -2,7 +2,7 @@
 #include <string.h>
 
 int myFunc(int input) {
-    return input + 5;
+    return input + 1;
 }
 
 int main() {
@@ -18,13 +18,13 @@ int main() {
         printf("full array address: %p\n", &arr);
     }
     
-    while (k+j < 5) {
-        printf("%d is still less than 5\n", k);
-        k++;
-    }
-    
-    float testFloat = myFunc(4.39304902);
+    int testFloat = myFunc(4);
     printf("test: %d", testFloat);
+
+    while (testFloat < 10) {
+        printf("%d is still less than 5\n", testFloat);
+        testFloat++;
+    }
 
     return 0;
 }
